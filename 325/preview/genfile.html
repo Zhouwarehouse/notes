@@ -1,0 +1,120 @@
+<html>
+  <head>
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>i5ting_ztree_toc:genfile</title>
+		<link href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css"/>
+		<link href="toc/css/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet" type="text/css"/>
+	  <style>
+		pre {
+		    counter-reset: line-numbering;
+		    border: solid 1px #d9d9d9;
+		    border-radius: 0;
+		    background: #fff;
+		    padding: 0;
+		    line-height: 23px;
+		    margin-bottom: 30px;
+		    white-space: pre;
+		    overflow-x: auto;
+		    word-break: inherit;
+		    word-wrap: inherit;
+		}
+
+		pre a::before {
+		  content: counter(line-numbering);
+		  counter-increment: line-numbering;
+		  padding-right: 1em; /* space after numbers */
+		  width: 25px;
+		  text-align: right;
+		  opacity: 0.7;
+		  display: inline-block;
+		  color: #aaa;
+		  background: #eee;
+		  margin-right: 16px;
+		  padding: 2px 10px;
+		  font-size: 13px;
+		  -webkit-touch-callout: none;
+		  -webkit-user-select: none;
+		  -khtml-user-select: none;
+		  -moz-user-select: none;
+		  -ms-user-select: none;
+		  user-select: none;
+		}
+
+		pre a:first-of-type::before {
+		  padding-top: 10px;
+		}
+
+		pre a:last-of-type::before {
+		  padding-bottom: 10px;
+		}
+
+		pre a:only-of-type::before {
+		  padding: 10px;
+		}
+
+		.highlight { background-color: #ffffcc } /* RIGHT */
+		</style>
+  </head>
+  <body>
+	  <div>
+				<div style='width:25%;'>
+						<ul id="tree" class="ztree" style='width:100%'>
+
+						</ul>
+				</div>
+        <div id='readme' style='width:70%;margin-left:20%;'>
+          	<article class='markdown-body'>
+            	<h2 id="-u-u-"><u><strong><em>身份证</em></strong></u></h2>
+<p>行李箱（袜子（...），毛巾，一次性床单，一份擀面皮，充电宝，身份证，充电宝，卫衣，鞋，娃哈哈）
+git pull --rebase origin master
+      Git中的分支，其实本质上仅仅是个指向commit 对象的可变指针。Git会使用master 作为分支的默认名字。在若干次提交后，你其实已经有了一个指向最后一次提交对象的master 分支，它在每次提交的时候都会自动向前移动。</p>
+<pre><code>     创建一个新的分支，即创建一个新的分支指针。比如创建一个testing分支，可以使用git branch命令：
+</code></pre><h2 id="-git-branch-testing">$ git branch testing</h2>
+<p>HEAD特别指针，在Git中，它是一个指向你正在工作中的本地分支的指针。运行git branch 命令，仅仅是建立了一个新的分支，但不会自动切换到这个分支中去。要切换到其它分支，可以执行git checkout命令：</p>
+<h2 id="-git-checkout-testing">$ git checkout testing</h2>
+<p>这样HEAD就指向了testing分支。每次提交后HEAD随着分支一起向前移动。</p>
+<h2 id="-git-checkout-b-testing">$ git checkout -b testing</h2>
+<p>相当于：</p>
+<h2 id="-git-branch-testing">$ git branch testing</h2>
+<h2 id="-git-checkout-testing">$ git checkout testing</h2>
+<p>两条命令。
+分支合并：用git merge命令来进行合并，</p>
+<h2 id="-git-merge-testing">$ git merge testing</h2>
+<p> 删除一个分支：</p>
+<h2 id="-git-branch-d-testing">$ git branch -d testing</h2>
+<p>格式化时间的你npm</p>
+<h2 id="moment">moment</h2>
+<h2 id="nrm-">nrm 切换成淘宝镜像</h2>
+<h2 id="nrm-use-taobao">nrm use taobao</h2>
+<h2 id="-">查看所有的镜像源</h2>
+<blockquote>
+<p>npm ls</p>
+</blockquote>
+<p>md文档转换为html页面</p>
+<h2 id="npm-i-g-i5ting_toc">npm i -g i5ting_toc</h2>
+<blockquote>
+</blockquote>
+<p>i5ting_toc -f 要转换的md文件路径 -o</p>
+
+          	</article>
+        </div>
+		</div>
+  </body>
+</html>
+<script type="text/javascript" src="toc/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="toc/js/jquery.ztree.all-3.5.min.js"></script>
+<script type="text/javascript" src="toc/js/ztree_toc.js"></script>
+<script type="text/javascript" src="toc_conf.js"></script>
+
+<SCRIPT type="text/javascript" >
+<!--
+$(document).ready(function(){
+    var css_conf = eval(markdown_panel_style);
+    $('#readme').css(css_conf)
+    
+    var conf = eval(jquery_ztree_toc_opts);
+		$('#tree').ztree_toc(conf);
+});
+//-->
+</SCRIPT>
